@@ -2,6 +2,22 @@
   --main-color: #ff6347;
 }
 
+.image {
+  width: 100%;
+}
+
 .main {
   text-align: center;
+}
+
+@media only screen and (min-width: 425px) {
+  .image {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .image {
+    width: 40%;
+  }
 }
