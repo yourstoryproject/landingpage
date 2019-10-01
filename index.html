@@ -42,13 +42,19 @@
       <p>A community project in progress... come back soon!</p>
     </div>
     <div class="signup-form">
+      <p>Subscribe to stay in formed about our project progress!</p>
       <form action="https://docs.google.com/forms/d/e/1FAIpQLSeR36w3vsYw1-9bh6QeYZlNKTCHx-ad7Xvs0o4UfknO6bHA9Q/formResponse" method="post" onsubmit="submitted=true;">
-          <label>Name*</label>
-          <input type="text" placeholder="Jon Snow" name="entry.1139116789" required />
-
-          <label>Email Address*</label>
-          <input type="email" placeholder="jonsnow@winter.com" name="emailAddress" required />
-          <button type="submit" >Submit</button>
+        <div class="content-form">
+          <div class="name-form">
+            <label>Name*</label>
+            <input type="text" placeholder="Jane Doe" name="entry.1139116789" required />
+          </div>
+          <div class="email-form">
+            <label>Email Address*</label>
+            <input type="email" placeholder="email@example.com" name="emailAddress" required />
+          </div>
+        </div>
+        <button type="submit" >Submit</button>
       </form>
     </div>
 </body>
