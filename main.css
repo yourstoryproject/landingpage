@@ -18,16 +18,16 @@ body {
 }
 
 .signup-form {
-  background: var(--main-color);
-  color: var(--font-color-secondary);
+  width: 1400px;
   max-width: 95%;
-  margin: 0px auto;
   padding: 1em;
-  border-radius: 10px;
+  margin: 0px auto;
   margin: auto;
   font-size: 1em;
+  color: var(--font-color-secondary);
   text-align: center;
-  width: 1400px;
+  background: var(--main-color);
+  border-radius: 10px;
 }
 
 .signup-form p {
@@ -40,11 +40,11 @@ body {
 }
 
 input {
-  margin: 10px;
-  padding: 10px 16px;
   width: 160px;
-  border: 2px solid var(--font-color-secondary);
+  padding: 10px 16px;
+  margin: 10px;
   background: transparent;
+  border: 2px solid var(--font-color-secondary);
 }
 
 input::placeholder {
@@ -65,14 +65,14 @@ button {
 
 button:hover,
 button:focus {
-  box-shadow: 5px 5px 5px 3px rgba(20, 20, 20, 0.3);
   transform: scale(1.015);
+  box-shadow: 5px 5px 5px 3px rgba(20, 20, 20, 0.3);
 }
 
 @media only screen and (max-width: 475px) {
   .signup-form input {
-    margin: 10px auto;
     width: calc(100% - 3em);
+    margin: 10px auto;
   }
 }
 
