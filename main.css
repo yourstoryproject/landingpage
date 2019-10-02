@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+
 :root {
   --main-color: #ff6347;
+  --font-color-secondary: #ffffff;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
 }
 
 .image {
@@ -10,7 +17,73 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 425px) {
+.signup-form {
+  width: 1400px;
+  max-width: 95%;
+  padding: 1em;
+  margin: 0px auto;
+  margin: auto;
+  font-size: 1em;
+  color: var(--font-color-secondary);
+  text-align: center;
+  background: var(--main-color);
+  border-radius: 10px;
+}
+
+.signup-form p {
+  font-size: 1.5em;
+  margin: 0px auto 2rem;
+}
+
+.signup-form fieldset {
+  border: none;
+}
+
+input {
+  width: 160px;
+  padding: 10px 16px;
+  margin: 10px;
+  background: transparent;
+  border: 2px solid var(--font-color-secondary);
+}
+
+input::placeholder {
+  color: var(--font-color-secondary);
+}
+
+button {
+  text-transform: uppercase;
+  color: var(--main-color);
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.5s ease;
+}
+
+button:hover,
+button:focus {
+  transform: scale(1.015);
+  box-shadow: 5px 5px 5px 3px rgba(20, 20, 20, 0.3);
+}
+
+@media only screen and (max-width: 475px) {
+  .signup-form input {
+    width: calc(100% - 3em);
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .signup-form button {
+    display: table;
+    margin: 10px auto;
+  }
+}
+
+@media only screen and (min-width: 475px) {
   .image {
     width: 60%;
   }
